@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="FeetArray">
+        <item>4 ft</item>
+        <item>5 ft</item>
+        <item>6 ft</item>
+    </string-array>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Screen Design for Metric Input -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/metTableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:stretchColumns="1,2,3"
+    android:background="@color/backGroundColor" >
+
+    <TableRow
+        android:id="@+id/mettableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/mettextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:text="@string/WeightLabel"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/mettableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <SeekBar
+            android:id="@+id/metweightSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:max="200"
+            android:thumbOffset="-1dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:id="@+id/metweightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="@string/kgLabel"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/mettableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/metTextView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingTop="0dp"
+            android:text="@string/HeightLabel"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/mettableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <SeekBar
+            android:id="@+id/metheightSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:max="210"
+            android:thumbOffset="-1dp"
+            android:paddingLeft="14dp" 
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:id="@+id/metheightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="@string/cmLabel"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/mettableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/metclearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:padding="3dp"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/metcalculateBmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_span="2"  
+            android:text="@string/calculate" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/mettableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+         <ImageButton
+             android:id="@+id/infoButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:layout_span="4"
+             android:contentDescription="@string/infoButton"
+             android:src="@drawable/info3" />
+
+    </TableRow>
+
+</TableLayout> 
